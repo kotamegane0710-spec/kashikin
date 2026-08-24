@@ -4,20 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>貸金業務取扱主任者 過去問道場</title>
-
-<!-- PWA: manifest -->
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#1c2b4a">
-
-<!-- iOS Safari: ホーム画面に追加した際にアプリらしく動かすための設定 -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="過去問道場">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-<!-- Android Chrome用アイコン -->
-<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 <style>
   :root{
     --navy:#1c2b4a;
@@ -12871,7 +12860,7 @@ const EXAMS = [
      "④ 4個"
     ],
     "answer": 0,
-    "explanation": "適切なものはａ、ｃ、ｄの3個です。\nａは極度方式基本契約の契約締結前書面交付義務として正しく、ｃは保証契約の契約締結前書面交付義務として正しく、ｄは監督指針上の留意事項として正しい記述です。\nｂは誤りで、極度方式貸付け（個別の貸付け）については契約締結前書面の交付義務は課されていません（極度方式基本契約の締結時に交付されるため）。\n\nよって③が正解です。\n\nなお、本問はａ〜ｄの正誤判定に実務上の細かな論点を含むため、正答は公式解答（②：2個）に従っています。詳細は公式テキスト等でのご確認を推奨します。"
+    "explanation": "適切なものはａのみ1個です。よって①が正解です。\n\nａは正しい記述です。貸金業者は、極度方式基本契約を締結しようとする場合には、当該契約を締結するまでに、内閣府令で定めるところにより、当該極度方式基本契約の内容を説明する書面を相手方となろうとする者に交付しなければなりません（法16条の2第2項）。\n\nｂは誤りです。極度方式貸付けに係る契約（個別の貸付け）については、極度方式基本契約締結時に交付した契約締結前の書面に当該貸付けの記載事項がすべて含まれている場合には、個々の極度方式貸付けについて別途契約締結前の書面を交付する必要はないとする特則があり（法16条の2第3項）、ｂのように無条件に交付義務があるとする記述は不適切です。\n\nｃは誤りです。保証契約における契約締結前の書面（法16条の2第3項）は、当該保証契約の保証人となろうとする者に交付すれば足り、当該貸付けに係る契約の相手方（債務者）への交付は法律上求められていません。ｃのように両者への交付を必要とする記述は不適切です。\n\nｄは誤りです。貸金業者向けの総合的な監督指針（Ⅱ-2-16(2)②）によれば、契約締結前の書面を交付した後、契約締結前に法令で定められた記載事項の内容に変更が生じた場合には、再度、当該契約の相手方となろうとする者に対し契約締結前の書面を交付する必要があるとされています。したがって「交付する義務がないことに留意する必要がある」とするｄの記述は不適切です。"
    },
    {
     "no": 13,
@@ -13626,15 +13615,6 @@ function highlightBlanks(escapedStr){
 }
 
 render();
-
-// PWA: サービスワーカー登録（オフラインでも動作するように）
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("service-worker.js").catch(() => {
-      // 登録に失敗してもアプリ自体は通常のWebページとして動作する
-    });
-  });
-}
 </script>
 </body>
 </html>
